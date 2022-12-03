@@ -1,0 +1,137 @@
+\input texinfo
+@setfilename manual
+@settitle SmartCalc_v1.0
+@documentencoding UTF-8
+
+@copying
+Copyright © 2022 by ELTATS DUNYAMALIEV
+@end copying
+
+@titlepage
+@title Short guide to using the calculator.
+@vskip 
+@insertcopying
+@author ELTATS DUNYAMALIEV
+@end titlepage
+
+@ifnottex
+@node Top
+@top SmartCalc_v1.0
+@insertcopying
+@end ifnottex
+
+@menu
+* General information:: This section provides common information on the principle of operation of calculator.
+* Arithmetic operations:: This section provides information about the list of implemented arithmetic operations
+* Math function:: This section provides information about the list of implemented mathematical functions.
+* Charts:: This section provides information about the possibility of plotting functions.
+* Credit calculator:: This section provides information about the possibility of a credit calculator.
+* Deposit calculator:: This section provides information about the possibility of a deposit calculator.
+@end menu
+
+@node General information
+@chapter General information
+
+The calculator is developed in the C/C++ programming language using the ImGui and Implot.
+The main principle of calculations is implemented on the basis of Dijkstra's algorithm, the essence of which is to convert mathematical expressions from infix notation to reverse Polish notation.
+
+@node  Arithmetic operations
+@chapter  Arithmetic operations
+
+The following arithmetic operations are implemented in the calculator:
+@enumerate
+@item
+Addition - a + b
+@item
+Subtraction - a - b
+@item
+Multiplication - a * b
+@item
+Division - a / b
+@item
+Power - a ^ b
+@item
+Remainder of the division - a mod b
+@item
+Unary plus - +a
+@item
+Unary minus - -a
+@item
+To enter complex expressions use left and right brackets - (a)
+@end enumerate
+You can specify a complex mathematical expression using the constant "x".
+Enter the expression, click "=" and get the answer.
+
+@node Math function
+@chapter Math function
+
+The following mathematical functions are implemented in the calculator:
+@enumerate
+@item
+Computes cosine - cos(x)
+@item
+Computes sine - sin(x)
+@item
+Computes tangent - tan(x)
+@item
+Computes arc cosine - acos(x)
+@item
+Computes arc sine - asin(x)
+@item
+Computes arc tangent - atan(x)
+@item
+Computes square root - sqrt(x)
+@item
+Computes natural logarithm - ln(x)
+@item
+Computes common logarithm - log(x)
+@end enumerate
+Enter the expression, click "=" and get the answer.
+
+@node Charts
+@chapter Charts
+
+The calculator implements the possibility of plotting functions.
+In order to build a graph, it is necessary that the constant "x" is present in the expression.
+Enter the expression, click the "=" button.
+New window with a graph will appear.
+
+@node Credit calculator
+@chapter Credit calculator
+
+The calculator has a special mode of operation: Credit Calculator.
+
+The credit calculator window contains the following fields:
+
+- Sum - the desired loan amount.
+- Term - set in months, supports only integer values.
+- Interest - the desired interest rate. Set as an integer or a floating-point number.
+- The type of monthly payments is radiobutton, the type of calculation of monthly payments.
+
+Output Fields: 
+- Monthly loan payment
+- Overpayment on the loan (interest)
+- The total amount to be paid.
+
+@node Deposit calculator
+@chapter Deposit calculator
+
+The calculator has a special mode of operation: Deposit Calculator.
+
+The deposit calculator window contains the following fields:
+
+- Sum - the initial deposit amount.
+- Term - for how long you plan to invest money.
+- The interest is the percentage at which you invest money.
+- Tax - the current key rate of the Central Bank is set.
+- Monthly or Yearly - the frequency of interest accrual 
+- Capitalization - activate the checkbox if interest is credited to the account.
+- Replenishments - the frequency of replenishment of the account.
+- Withdraw - the frequency of partial withdrawals of the account.
+
+Output fields:
+- Accrued interest.
+- The amount of tax.
+- The amount of tax by the end of the deposit period.
+
+@bye
